@@ -32,7 +32,7 @@ const Login = ({onLogin}) => {
             }
             //API Call
             try {
-                const response = await axios.post("http://localhost:3000/login",data)
+                const response = await axios.post("https://products-backend-07s2.onrender.com/login",data)
                 console.log(response.data)
                 alert(response.data.message)
                 onLogin()

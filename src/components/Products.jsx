@@ -10,7 +10,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/products')
+        const response = await axios.get('https://products-backend-07s2.onrender.com/products')
         setProducts(response.data)
       } catch (error) {
         setError('Error fetching products. Please try again later.')
